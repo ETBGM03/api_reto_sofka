@@ -6,7 +6,6 @@ const conection = mysql.createConnection({
   database: 'api_node',
   user: 'root',
   password: '',
-  // port: '3308',
   port: '3306',
   multipleStatements: true,
 });
