@@ -10,8 +10,8 @@ API para el consumo de preguntas, y todo lo necesario para el reto sofka
 - Ejecutar el schema en mysql, ruta [aquí](./db/schema_api_reto_sofka.sql).
 - Ejecutar el llenado de las tablas en mysql, ruta [aquí](./db/llenado_datos_api_reto_sofka.sql).
 - Desde la terminal instalar las dependencias del proyecto, con el comando `npm i` , despues `npm i nodemon -D` (instalará dependencia de desarrollo)
-- ejecuta el comando `npm run dev`
+- ejecuta el comando `npm run dev`, *debes reservar el puerto 3001*
 
 ### NOTA
 
-Debes ejecutarlo en orden especificado para que se puede ejecutar bien
+Debes ejecutarlo en orden especificado para que se puede ejecutar bien.
