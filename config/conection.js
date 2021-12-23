@@ -3,7 +3,7 @@ const mysql = require('mysql'); //paquete para conectar a mysql
 //creamos el objecto de conexion para mysql
 const conection = mysql.createConnection({
   host: 'localhost',
-  database: 'api_node',
+  database: 'api_reto_sofka',
   user: 'root',
   password: '',
   port: '3306',

@@ -2,29 +2,22 @@ const { conection } = require('./../config/conection');
 
 class GuardarRondaGanada {
   guardarRondaGanada(
-    nombre_usuario,
-    apellido_usuario,
-    identificacion_usuario,
-    puntaje_usuario,
-    usuario_id
+    nom_usuario,
+    ape_usuario,
+    iden_usuario,
+    puntaje,
+    usuario_idusuario
   ) {
     return new Promise((resolve, reject) => {
-      let sql = [
-        `SET FOREIGN_KEY_CHECKS=0`,
-        `INSERT INTO tabla_posiciones set ?`,
-        `SET FOREIGN_KEY_CHECKS=1`,
-      ];
       conection.query(
-        sql.join(';'),
-        [
-          {
-            nombre_usuario,
-            apellido_usuario,
-            identificacion_usuario,
-            puntaje_usuario,
-            usuario_id,
-          },
-        ],
+        `INSERT INTO ronda_ganada set ?`,
+        {
+          nom_usuario,
+          ape_usuario,
+          iden_usuario,
+          puntaje,
+          usuario_idusuario,
+        },
         (err, results, fields) => {
           if (err) {
             reject(err);

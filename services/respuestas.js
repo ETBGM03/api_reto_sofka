@@ -15,9 +15,9 @@ class IniciarJuego {
       // where pregunta_id_pregunta = ${id};`,
       // ];
       // conection.query(sql.join(';'), (err, result) => {
-      let sql = `select res.id_respuesta, res.respuesta_pregunta, res.valida
+      let sql = `select res.idrespuesta, res.respuesta_pregunta, res.valida
       from respuesta as res
-      where pregunta_id_pregunta = ${id}`;
+      where pregunta_idpregunta = ${id}`;
       conection.query(sql, (err, result) => {
         if (err) {
           reject(err);

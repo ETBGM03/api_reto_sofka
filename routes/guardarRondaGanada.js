@@ -5,14 +5,13 @@ const service = new GuardarRondaGanada();
 
 router.post('/', async (req, res) => {
   try {
-    console.log(req.params);
-    let { nombre, apellido, identificacion, puntos2, Id } = req.body;
+    let { nombre, apellido, identificacion, puntos2, idusuario } = req.body;
     const pregunta = await service.guardarRondaGanada(
       nombre,
       apellido,
       identificacion,
       puntos2,
-      Id
+      idusuario
     );
     res.status(200).json(pregunta);
   } catch (error) {
